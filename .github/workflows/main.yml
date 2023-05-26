@@ -104,13 +104,13 @@ jobs:
         # Эта команда устанавливает зависимости для фронтенда
         run: |
           cd frontend/
-          npm install
           npm ci
 
       - name: Test frontend
         # Запускаем тесты
         run: |
           cd frontend/
+          npm install
           npm run test
           
   build_frontend_and_push_to_docker_hub:
